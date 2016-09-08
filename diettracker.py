@@ -33,6 +33,10 @@ black = (0,0,0)
 # MODIFIABLE CONFIGS
 logfile = "dietlog.log"
 
+def writelog(type):
+	data = 'food_type=' + type + '\n'
+	file(logfile, WRITE_TYPE).write(data)
+
 
 if __name__ == "__main__":
 
@@ -46,6 +50,14 @@ if __name__ == "__main__":
 	try:
 		foods = sys.argv[5]
 
+		try:
+			open(logfile, WRITE_TYPE)
+			data = file(logfile).read()
+			data = data.encode(ENCODE)
+			
+		except:
+			pass
+
 		# Loop through Keys
 		while running:
 			for event in pygame.event.get():
@@ -53,15 +65,15 @@ if __name__ == "__main__":
 					running = False
 				if event.type == pygame.KEYDOWN:
 					if event.key == pygame.K_SPACE:
-						print F_SPACE
+						writelog(F_SPACE)
 					elif event.key == pygame.K_UP:
-						print F_UP
+						writelog(F_UP)
 					elif event.key == pygame.K_DOWN:
-						print F_DOWN
+						writelog(F_DOWN)
 					elif event.key == pygame.K_LEFT:
-						print F_LEFT
+						writelog(F_LEFT)
 					elif event.key == pygame.K_RIGHT:
-						print F_RIGHT
+						writelog(F_RIGHT)
 
 				# Increase score only if proper key is pressed
 				elif event.type == pygame.KEYUP:
@@ -92,6 +104,8 @@ if __name__ == "__main__":
 				# Blit to screen
 				window.blit(background, (0,0))
 				pygame.display.flip()
+
+		file.closed
 
 	except IndexError:
 		print 'Input not recognized!\n'
