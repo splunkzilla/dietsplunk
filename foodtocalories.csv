@@ -1,0 +1,47 @@
+food_type,calories_per_portion,calories_per_100_grams,energy_content
+apple,44,44,Low
+banana,107,65,Low
+baked beans,170,80,Low
+beans dried (boiled),180,130,Low
+blackberries,25,25,Low
+blackcurrant,30,30,Low
+broccoli,27,32,Very low
+cabbage (boiled),15,20,Low
+carrot,16,25,Low
+cauliflower (boiled),20,30,Low
+celery (boiled),5,10,Low
+cherry,35,50,Low
+courgette,8,20,Very low
+cucumber,3,20,Very low
+dates,100,235,Med-High
+grapes,55,62,Low
+grapefruit,32,32,Low
+kiwi,40,50,Low
+leek (boiled),10,20,Low
+lentils (boiled),150,100,Medium
+lettuce,4,15,Very low
+melon,14,28,Low
+mushrooms raw (one average),3,15,Very low
+mushrooms (boiled),12,12,Very low
+mushrooms (fried),100,145,High
+orange,40,30,Low
+peas,210,148,Medium
+peas dried & boiled,200,120,Low
+peach,35,30,Low
+pear,45,38,Low
+pepper yellow,6,16,Very low
+pineapple,40,40,Low
+plum,30,39,Low
+spinach,8,8,Very low
+strawberries (1 average),5,6,30,6,Low
+sweetcorn,95,130,Medium
+sweetcorn on the cob,70,70,Low
+tomato,30,20,Low
+tomato cherry (3 tomates),6,17,Very low
+tomato puree,70,70,Low-Med
+watercress,5,20,Very low
+olives,50,80,Low
+onion (boiled),14,18,Very low
+one red Onion,49,33,Low
+onions spring,3,25,Low
+onion (fried),86,155,High
